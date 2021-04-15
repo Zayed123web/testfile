@@ -1,0 +1,134 @@
+.heading-container{
+  font-size: 36px;
+  font-family: 'Nunito', sans-serif;
+  text-align: center;
+}
+
+.card-container {
+  display: flex;
+  max-width: 1240px;
+  margin: 0 auto;
+  justify-content: space-around;
+}
+.card {
+  border: 1px solid rgba(0, 0, 0,.15);
+  text-align: center;
+  background: #FFFFFF;
+  width: 360px;
+  border-radius: 10px;
+  height: 491px;
+  position: relative;
+}
+.card::before {
+  content: "";
+  background: url(bg-img.png);
+  display: block;
+  top: 50%;
+  width: 177px;
+  height: 169px;
+  position: absolute;
+  background-repeat: no-repeat;
+  left: 10%;
+}
+.card h4 {
+  font-size: 36px;
+  font-family: 'Nunito', sans-serif;
+  color: #2F3043;
+}
+.card .price {
+  font-size: 24px;
+  font-family: 'Nunito', sans-serif;
+  color: #2F3043;
+}
+.card .desc {
+  font-size: 16px;
+  line-height: 2.4;
+  color: #2F3043;
+  font-family: 'Nunito', sans-serif;
+}
+.card .valid {
+  padding-top: 20%;
+  font-size: 16px;
+  font-family: 'Nunito', sans-serif;
+  color: #2F3043;
+}
+.card-btn {
+  font-size: 18px;
+  font-family: 'Nunito', sans-serif;
+  border: 1px solid rgba(0, 0, 0,.15);
+  position: absolute;
+  bottom: -165px;
+  left: 19%;
+  width: 228px;
+  height: 228px;
+  border-radius: 50%;
+  border-bottom: 1px solid transparent;
+  border-right: 1px solid transparent;
+  background: #C4C4C4;
+  box-sizing: border-box;
+  line-height: 4.5;
+}
+
+.acrd-active{
+  background: linear-gradient(90deg, #ED1C24 0%, #9D0B0F 100%);
+}
+
+p.price b {
+  /* border-bottom: 1px solid red; */
+  position: relative;
+  color: #2F3043;
+
+}
+p.price b:before {
+  content: "";
+  border-bottom: 2px solid #2F3043;
+  display: block;
+  width: 40px;
+  position: absolute;
+  top: 15px;
+  left: -50px;
+}
+p.price b:after {
+  content: "";
+  border-bottom: 2px solid #2F3043;
+  display: block;
+  width: 40px;
+  position: absolute;
+  top: 15px;
+  right: -50px;
+  
+}
+
+
+/* Active */
+
+.acrd-active h4 {
+  color: #FFFFFF;
+}
+.acrd-active p.price b {
+  color: #FFFFFF;
+}
+.acrd-active .desc {
+  color: #FFFFFF;
+}
+.acrd-active .valid {
+  color: #FFFFFF;
+}
+
+.acrd-active p.price b:before {
+  border-bottom: 2px solid #FFFFFF;
+}
+.acrd-active p.price b:after {
+  border-bottom: 2px solid #FFFFFF;  
+}
+.acrd-active::before {
+  content: "";
+  background: url(bg-light.png);
+  display: block;
+  top: 50%;
+  width: 177px;
+  height: 174px;
+  position: absolute;
+  background-repeat: no-repeat;
+  left: 10%;
+}
